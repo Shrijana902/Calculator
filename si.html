@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <script>
+        function interest(){
+            var p=document.getElementById("principle").value;
+            var r=document.getElementById("rate").value;
+            var t=document.getElementById("time").value;
+            var I=(p*t*r)/100;
+            document.getElementById("SI").innerHTML="SI="+I;
+        }
+    </script>
+
+
+
+    <style>
+        body{
+            background-color:antiquewhite ;
+            
+        }
+        table{
+            margin: 150px 450px;
+            border-collapse: collapse;
+            align-items: center;
+        }
+        td{
+            font-family: sans-serif;
+            padding: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr></tr>
+            <th>Simple Interest</th>
+        </tr>
+        <tr>
+            <td>
+                Enter Principle amount:<input type="text" id="principle"><br> <br>
+                Enter Rate of Interest :<input type="text" id="rate"><br><br>
+                Enter Time in years:<input type="text" id="time"><br><br>
+                <button onclick="interest()">Calculate</button>
+                <p id="SI"></p>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
