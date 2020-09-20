@@ -30,6 +30,35 @@
             font-family: sans-serif;
             padding: 5px;
         }
+        button{
+            text-decoration: none;
+            background-color: rgb(153, 13, 13);
+            text-align: center;
+            border-radius: 5px;
+            color: white;
+            float:right;
+            font-size: medium;
+            
+        }
+        #calc{
+            float: left;
+            background-color: seagreen;
+
+        }
+        button a{
+            text-decoration: none;
+        
+            text-align: center;
+            border-radius: 3px;
+            color: white;
+            
+           
+        }
+        #calc:hover{
+            background-color: darkcyan;
+            font-size: larger;
+        }
+
 
 
     </style>
@@ -46,6 +75,7 @@
                 Enter Time in years:<input type="text" id="time"><br><br>
                 <button onclick="interest()">Calculate</button>
                 <p id="SI"></p>
+                <button id="calc"><a href="calculator.html">Calculator</a></button>
             </td>
         </tr>
     </table>

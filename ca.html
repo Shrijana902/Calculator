@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculator</title>
     <script>
-        function Cinterest(){
+        function Camount(){
             var p=document.getElementById("principle").value;
             var r=document.getElementById("rate").value;
             var t=document.getElementById("time").value;
@@ -18,8 +18,8 @@
             var xnt=Math.pow(x,nt);
 
 
-            var CI=p*xnt;
-            document.getElementById("CI").innerHTML="CI="+CI;
+            var CA=p*xnt;
+            document.getElementById("CA").innerHTML="Compound Amount="+CA;
         }
     </script>
 
@@ -39,15 +39,46 @@
             font-family: sans-serif;
             padding: 5px;
         }
+        button{
+            text-decoration: none;
+            background-color: rgb(153, 13, 13);
+            text-align: center;
+            border-radius: 5px;
+            color: white;
+            float:right;
+            font-size: medium;
+            
+        }
+        #calc{
+            float: left;
+            background-color: seagreen;
+
+        }
+        button a{
+            text-decoration: none;
+        
+            text-align: center;
+            border-radius: 3px;
+            color: white;
+            
+           
+        }
+        #calc:hover{
+            background-color: darkcyan;
+            font-size: larger;
+        }
+
+
 
 
 
     </style>
 </head>
 <body>
+   
     <table border="1">
         <tr></tr>
-            <th>Compound Interest</th>
+            <th>Compound Amount</th>
         </tr>
         <tr>
             <td>
@@ -56,8 +87,9 @@
                 Enter Time in years:&nbsp;&nbsp;&nbsp;<input type="text" id="time"><br><br>
                 Enter Rate of compound per yrs:<input type="text" id="cnd"><br><br>
 
-                <button onclick="Cinterest()">Calculate</button>
-                <p id="CI"></p>
+                <button onclick="Camount()">Calculate</button>
+                <p id="CA"></p>
+                <button id="calc"> <a href="calculator.html">Calculator</a></button>
             </td>
         </tr>
     </table>

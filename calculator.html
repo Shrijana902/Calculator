@@ -5,49 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/calc.js"></script>
 </head>
-<script type="text/javascript">
-
-
-    function myclick(a) {
-        myform.displayh.value += a;
-    }
-    function equalto() {
-        myform.display.value = eval(myform.displayh.value);
-
-
-    }
-
-    function ac() {
-        myform.displayh.value = "0";
-        myform.display.value = "0";
-    }
-    function del() {
-        var prevalue = myform.displayh.value;
-        myform.displayh.value = prevalue.substr(0, prevalue.length - 1);
-        myform.display.value = "0";
-    }
-    function fnsin() {
-        myform.display.value = Math.sin(myform.displayh.value)
-    }
-    function fncos() {
-        myform.display.value = Math.cos(myform.displayh.value)
-    }
-    function fntan() {
-        myform.display.value = Math.tan(myform.displayh.value)
-    }
-    function square() {
-        myform.display.value = Math.pow(myform.displayh.value, 2)
-    }
-    function squarert() {
-        myform.display.value = Math.pow(myform.displayh.value, 1 / 2)
-    }
-    function myfunction() {
-        var p = document.getElementById("")
-
-    }
-</script>
 
 <body>
     <div class="wrapper">
@@ -112,7 +72,7 @@
                         <td></td>
                         
                         <td> <a href="si.html"><input type="button" class="num" value="SI" value="SI"></a></td>
-                        <td> <a href="ci.html"> <input type="button" class="num" value="CI" value="CI"></a></td>
+                        <td> <a href="ca.html"> <input type="button" class="num" value="CA" value="CI"></a></td>
                         <td></td>
                     </tr>
                 </table>
